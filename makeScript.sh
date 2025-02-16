@@ -23,19 +23,23 @@ import {Script, console} from \"forge-std/Script.sol\";
 import \"../src/levels/${filename}.sol\";
 
 contract ${filename}Script is Script {
-    address private target;
-
     function setUp() external {}
 
     function run() external {
-
         vm.startBroadcast();
-
-        ${filename} ${filenamel}s = ${filename}(payable(target));
+        Attack attacks = new Attack();
 
         vm.stopBroadcast();
     }
-}"
+}
+
+contract Attack {
+    constructor() {
+        address target;
+        ${filename} ${filenamel}s = ${filename}(payable(target));
+    }
+}
+"
         printf '%s\n' "$content" >> "$dest_file"
         echo "Created: $dest_file (Top 2 lines copied)"
     fi
