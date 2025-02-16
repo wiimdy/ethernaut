@@ -25,7 +25,7 @@ import \"../src/levels/${filename}.sol\";
 contract ${filename}Script is Script {
     address private target;
 
-    function setUp() public {}
+    function setUp() external {}
 
     function run() external {
 
