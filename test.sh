@@ -23,14 +23,15 @@ import {Script, console} from \"forge-std/Script.sol\";
 import \"../src/levels/${filename}.sol\";
 
 contract ${filename}Script is Script {
+    address private target;
+
     function setUp() public {}
 
     function run() external {
-        address instance;
 
         vm.startBroadcast();
 
-        ${filename} ${filenamel}s = ${filename}(payable(instance));
+        ${filename} ${filenamel}s = ${filename}(payable(target));
 
         vm.stopBroadcast();
     }
