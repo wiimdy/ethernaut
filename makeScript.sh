@@ -34,9 +34,11 @@ contract ${filename}Script is Script {
 }
 
 contract Attack {
+    address private target;
+    ${filename} private ${filenamel}s = ${filename}(payable(target));
+    
     constructor() {
-        address target;
-        ${filename} ${filenamel}s = ${filename}(payable(target));
+
     }
 }
 "
