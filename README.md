@@ -1,5 +1,15 @@
 ## Foundry
 
+
+사용법.
+
+### 1. test.sh
+- test.sh에 실행 권한을 준 후 (chmod 755 test.sh) 실행을 하면 script 폴더에 script 파일들이 나온다.
+
+### 2. start.sh 
+- 실행권한을 똑같이 준 후 (chmod 755 start.sh) 쉘 스크립트 내 이더넛 깃헙 주소를 환경에 맞추어 설정하고 실행하면 
+- yarn network, deploy, start가 실행된다.
+
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
 Foundry consists of:
