@@ -17,7 +17,9 @@ https://piatoss3612.tistory.com/139
 
 ### 4. 자주 사용하는 명령어
 forge script --account local --rpc-url $RPC_URL --broadcast script/<문제 이름>.s.sol:<컨트랙트 이름>
+
 예시
+
 forge script --account local --rpc-url $RPC_URL --broadcast script/Fallback.s.sol:FallbackScript
 
 ### 5. 알면 좋은거
