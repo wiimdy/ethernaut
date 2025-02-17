@@ -4,7 +4,8 @@ pragma solidity ^0.8.0;
 contract CoinFlip {
     uint256 public consecutiveWins;
     uint256 lastHash;
-    uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+    uint256 FACTOR =
+        57896044618658097711785492504343953926634992332820282019728792003956564819968;
 
     constructor() {
         consecutiveWins = 0;
@@ -13,9 +14,9 @@ contract CoinFlip {
     function flip(bool _guess) public returns (bool) {
         uint256 blockValue = uint256(blockhash(block.number - 1));
 
-        if (lastHash == blockValue) {
-            revert();
-        }
+        // if (lastHash == blockValue) {
+        //     revert("Dddasf");
+        // }
 
         lastHash = blockValue;
         uint256 coinFlip = blockValue / FACTOR;
