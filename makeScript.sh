@@ -23,20 +23,20 @@ import {Script, console} from \"forge-std/Script.sol\";
 import \"../src/levels/${filename}.sol\";
 
 contract ${filename}Script is Script {
+    address private _target;
+    ${filename} private _${filenamel} = ${filename}(payable(_target));
+    
     function setUp() external {}
 
     function run() external {
         vm.startBroadcast();
-        Attack attacks = new Attack();
 
         vm.stopBroadcast();
     }
 }
 
 contract Attack {
-    address private _target;
-    ${filename} private _${filenamel} = ${filename}(payable(_target));
-    
+
     constructor() {
 
     }
