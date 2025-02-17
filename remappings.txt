@@ -1,4 +1,8 @@
 forge-std/=lib/forge-std/src/
+deploy-yul/=lib/deploy-yul/contracts/
+ds-test/=lib/openzeppelin-contracts-upgradeable/lib/forge-std/lib/ds-test/src/
+erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/
 openzeppelin-contracts-06/=lib/openzeppelin-contracts-06/contracts/
 openzeppelin-contracts-08/=lib/openzeppelin-contracts-08/contracts/
 openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
+openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/
